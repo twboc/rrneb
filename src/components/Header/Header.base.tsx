@@ -4,22 +4,26 @@ import { Component } from 'react'
 
 declare interface HeaderProps {}
 declare interface HeaderState {
-    isToggleOn: boolean
+    toggle: boolean
 }
 
 class HeaderBase extends Component<HeaderProps, HeaderState> {
 
     constructor(props: any) {
         super(props)
-        this.state = {isToggleOn: true}
+        this.state = {toggle: false}
         this.handleClick = this.handleClick.bind(this);
     }
-    
-    handleClick() {
+
+    toggle(toggle?: boolean) {
         this.setState(state => ({
-          isToggleOn: !state.isToggleOn
+            toggle: toggle
+                ? toggle
+                : !state.toggle
         }))
     }
+    
+    handleClick() { this.toggle() }
     
 }
 
