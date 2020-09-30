@@ -1,12 +1,12 @@
 import React from 'react'
 
-import CarBase from './Header.base'
+import HeaderBase from './Header.base'
 
-class Car extends CarBase { 
+class Header extends HeaderBase { 
 
     render() {
         return <h2 onClick={this.handleClick}>Hi, I am a Car! {this.state.isToggleOn.toString()}</h2>;
     }
 }
 
-export default Car
+export default Header

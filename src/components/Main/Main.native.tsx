@@ -6,14 +6,13 @@ import {
 } from 'react-native'
 
 import {
-  Header,
   LearnMoreLinks,
   Colors,
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
-import Car from './../Header/Header'
+import Header from './../Header/Header'
 
 const styles = StyleSheet.create({
   scrollView: {
@@ -59,7 +58,6 @@ declare const global: {HermesInternal: null | {}};
 const Main = () => {
   return (
     <>
-          <Header />
           {global.HermesInternal == null ? null : (
             <View style={styles.engine}>
               <Text style={styles.footer}>Engine: Hermes</Text>
@@ -67,7 +65,7 @@ const Main = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
-              <Car />
+              <Header />
               <Text style={styles.sectionTitle}>Step One HOT</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.tsx</Text> to change this

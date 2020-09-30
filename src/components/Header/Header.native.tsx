@@ -5,9 +5,9 @@ import {
   Text,
 } from 'react-native'
 
-import CarBase from './Header.base'
+import HeaderBase from './Header.base'
 
-class Car extends CarBase { 
+class Header extends HeaderBase { 
 
     render() {
         return (
@@ -23,4 +23,4 @@ class Car extends CarBase {
     }
 }
 
-export default Car
+export default Header

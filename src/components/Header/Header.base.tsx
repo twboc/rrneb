@@ -1,8 +1,13 @@
 
 
-import React, { Component } from 'react'
+import { Component } from 'react'
 
-class CarBase extends React.Component<{}, { isToggleOn: boolean }> {
+declare interface HeaderProps {}
+declare interface HeaderState {
+    isToggleOn: boolean
+}
+
+class HeaderBase extends Component<HeaderProps, HeaderState> {
 
     constructor(props: any) {
         super(props)
@@ -18,4 +23,4 @@ class CarBase extends React.Component<{}, { isToggleOn: boolean }> {
     
 }
 
-export default CarBase
+export default HeaderBase

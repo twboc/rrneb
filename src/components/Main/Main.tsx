@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Car from './../Header/Header'
+import Header from './../Header/Header'
 
 import scss from './scss.scss'
 import css from './css.css'
@@ -21,7 +21,7 @@ class Main extends Component<{}, { value: string }> {
   render() {
     return (
       <form>
-          <Car />
+          <Header />
           <div className={css.css}>CSS: React Component hot or not IS HOT!!!</div>
           <div className={scss.scss}>SCSS: React Component hot or not IS HOT!!!</div>
         <input
