@@ -19,7 +19,6 @@ class Header extends HeaderBase {
                     </Text>
                 </View>
             </TouchableOpacity>
-            
         )
     }
 }
