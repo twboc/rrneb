@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 
+import scss from './scss.scss'
+import css from './css.css'
+
 class Main extends Component<{}, { value: string }> {
   constructor(props: any) {
     super(props)
@@ -17,7 +20,8 @@ class Main extends Component<{}, { value: string }> {
   render() {
     return (
       <form>
-          <div>React Component hot or not IS HOT!!!</div>
+          <div className={css.css}>CSS: React Component hot or not IS HOT!!!</div>
+          <div className={scss.scss}>SCSS: React Component hot or not IS HOT!!!</div>
         <input
           type="text"
           value={this.state.value}
