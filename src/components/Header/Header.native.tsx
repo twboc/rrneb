@@ -14,7 +14,7 @@ class Header extends HeaderBase {
             <TouchableOpacity onPress={this.handleClick}>
                 <View>
                 <Text>
-                    Header Toggle: {this.state.isToggleOn.toString()}
+                    Header Toggle: {this.state.toggle.toString()}
                 </Text>
             </View>
             </TouchableOpacity>
