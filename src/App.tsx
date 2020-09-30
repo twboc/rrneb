@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Main from './components/Main'
+import Main from './components/Main/Main'
 
 const wrapper = document.getElementById('root')
 wrapper ? ReactDOM.render(<Main />, wrapper) : false

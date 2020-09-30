@@ -13,6 +13,8 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen'
 
+import Car from './../Header/Header'
+
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
@@ -65,6 +67,7 @@ const Main = () => {
           )}
           <View style={styles.body}>
             <View style={styles.sectionContainer}>
+              <Car />
               <Text style={styles.sectionTitle}>Step One HOT</Text>
               <Text style={styles.sectionDescription}>
                 Edit <Text style={styles.highlight}>App.tsx</Text> to change this
