@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
   resolve: {
-    extensions: ['.css', '.less', '.scss', '.ts', '.tsx', '.js', '.json']
+    extensions: ['.css', '.scss', '.ts', '.tsx', '.js', '.json']
   },
   module: {
     rules: [
