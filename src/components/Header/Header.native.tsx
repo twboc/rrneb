@@ -6,19 +6,19 @@ import {
 } from 'react-native'
 
 import HeaderBase from './Header.base'
+import style from './style/Header'
 
 class Header extends HeaderBase { 
 
     render() {
         return (
             <TouchableOpacity onPress={this.handleClick}>
-                <View>
-                <Text>
-                    Header Toggle: {this.state.toggle.toString()}
-                </Text>
-            </View>
+                <View style={style.header}>
+                    <Text>
+                        Header Toggle: {this.state.toggle.toString()}
+                    </Text>
+                </View>
             </TouchableOpacity>
-            
         )
     }
 }

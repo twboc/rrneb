@@ -1,35 +1,15 @@
 import React, { Component } from 'react'
 import Header from './../Header/Header'
 
-import scss from './scss.scss'
-import css from './css.css'
+import style from './style/Main.scss'
 
-class Main extends Component<{}, { value: string }> {
-  constructor(props: any) {
-    super(props)
-    this.state = { value: '' }
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(event: any) {
-    const { value } = event.target;
-    this.setState(() => {
-      return { value }
-    })
-  }
+class Main extends Component<{}, {}> {
 
   render() {
     return (
-      <form>
+      <div className={style.main}>
           <Header />
-          <div className={css.css}>CSS: React Component hot or not IS HOT!!!</div>
-          <div className={scss.scss}>SCSS: React Component hot or not IS HOT!!!</div>
-        <input
-          type="text"
-          value={this.state.value}
-          onChange={this.handleChange}
-        />
-      </form>
+      </div>
     )
   }
 }
