@@ -10,17 +10,21 @@ module.exports = {
   },
   module: {
     rules: [
+      //ignore react-native files by .native.xyz extension
+      { 
+        test: /\.native\.(ts|tsx|js|jsx)?$/,
+        loader: 'ignore-loader',
+        exclude: /node_modules/
+      },
       {
         test: /\.(ts|tsx)?$/,
         use: 'ts-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules/
       },
       {
         test: /\.(js|jsx)$/,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        loader: 'babel-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.html$/,
